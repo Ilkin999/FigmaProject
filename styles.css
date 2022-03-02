@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5% 8%; 
+}
+
+.main-section_heading {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 30px;
+    width: max-content;
+    height: 125px;
+}
+
+.main-section_body {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 2rem;
+}
+
+.main-articles {
+    width: 60%;
+    line-height: 1.4;
+}
+
+.ellipse {
+    height: 60px;
+    width: 360px;
+    border-radius: 100%;
+    background-color: #e5e5e5;
+}
+
+.bottom-section {
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-texts {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    width: 180px;
+}
+
+/* Tablet responsive design */
+
+@media screen and (max-width: 830px) {
+    .main-section_heading {
+        width: 212px;
+        height: 54px;
+        font-size: 21px;
+    }
+
+    .main-section_body {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    .main-image > img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .ellipse {
+        width: 200px;
+        height: 40px;
+    }
+}
